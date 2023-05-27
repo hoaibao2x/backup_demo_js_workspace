@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container w-50 mx-auto">
+        <h3>Ví dụ 1: Cho phép người dùng nhập vào 1 số. In ra số thẻ div Hello Cybersoft tương tự</h3>
+        <div class="form-group">
+            <p>Nhập vào 1 số</p>
+            <input type="text" class="form-control" id="iSo">
+            <button class="btn btn-success mt-3" id="btnInTheDiv">In thẻ div</button>
+        </div>
+        <div id="ketQua1">
+            <div class="alerrt alert-success mt-2">Hello Cybersoft</div>
+            <div class="alerrt alert-success mt-2">Hello Cybersoft</div>
+        </div>
+        <hr>
+        <h3>Ví dụ 2: Cho phép người dùng nhập vào 1 số và tính giai thừa của số đó</h3>
+        <div class="form-group">
+            <p>Nhập vào số</p>
+            <input type="text" class="form-control mb-2" id="nhapSo">
+            <button class="btn btn-success" id="btnTinhGiaiThua">Tính giai thừa</button>
+        </div>
+        <div class="alert alert-danger" id="ketQua">
+        </div>
+        <hr>
+        <h3>Ví dụ 3: Cho phép người dùng nhập vào 1 số. Tính tổng từ 1 -> n (Số người dùng nhập)</h3>
+        <div class="form-group">
+            <p>Nhập vào 1 số</p>
+            <input type="text" class="form-control mb-2" id="nhapSoVD3">
+            <button class="btn btn-success" id="btnTinhTong">Tính tổng</button>
+        </div>
+        <div class="alert alert-success">
+            <p id="inKetQua"></p>
+        </div>
+        <hr>
+        <h3>Ví dụ 4: Cho phép người dùng nhập vào 1 số. Tính tổng các số chẵn</h3>
+        <div class="form-group">
+            <p>Nhập vào 1 số</p>
+            <input type="text" class="form-control mb-2" id="nhapSoVD4">
+            <button class="btn btn-success" id="btnTinhTongChan">Tính tổng</button>
+        </div>
+        <div class="alert alert-success">
+            <p id="inKetQua4"></p>
+        </div>
+        <hr>
+        <h3>Ví dụ 5: Cho phép người dùng nhập vào 1 số. Cho biết đó có phải là số nguyên tố hay không</h3>
+        <div class="form-group">
+            <p>Nhập vào 1 số</p>
+            <input type="text" class="form-control mb-2" id="nhapSoVD5">
+            <button class="btn btn-success" id="btnSoNguyenTo">Tính tổng</button>
+        </div>
+        <div class="alert alert-success">
+            <p id="inKetQua5"></p>
+        </div>
+        <hr>
+        <h3>Ví dụ 6: Cho phép người dùng nhập vào 1 số. In ra số ngôi sao tương ứng</h3>
+        <div class="form-group">
+            <p>Nhập vào 1 số</p>
+            <input type="text" class="form-control mb-2" id="nhapSoVD6">
+            <button class="btn btn-success" id="btnInSao">Tính tổng</button>
+        </div>
+        <div class="alert alert-success">
+            <p id="inKetQua6"></p>
+        </div>
+        <hr>
+        <h3>Ví dụ 7: Cho phép người dùng nhập vào số hàng và số cột. In ra số ngôi sao</h3>
+        <div class="form-group">
+            <p>Nhập số hàng</p>
+            <input type="text" class="form-control mb-2" id="nhapHang">
+            <p>Nhập số cột</p>
+            <input type="text" class="form-control mb-2" id="nhapCot">
+            <button class="btn btn-success" id="btnInSao7">Tính tổng</button>
+        </div>
+        <div class="alert alert-success">
+            <p id="inKetQua7"></p>
+        </div>
+        <hr>
+        <h3>Ví dụ 8: Cho phép người dùng nhập vào 1 số. In ra các số nguyên tố nhỏ hơn hoặc bằng số người dùng nhập</h3>
+        <div class="form-group">
+            <p>Nhập số hàng</p>
+            <input type="text" class="form-control mb-2" id="nhapSoVD8">
+            <button class="btn btn-success" id="btnTinh8">Tính tổng</button>
+        </div>
+        <div class="alert alert-success">
+            <p id="inKetQua8"></p>
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="./js/main.js"></script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

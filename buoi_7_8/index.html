@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body class="container">
+
+    <!-- Giới thiệu mảng, truy xuất và thay đổi giá trị -->
+    <div class="w-50 mx-auto my-5">
+        <div class="card">
+            <div class="card-body text-center">
+                <h2>Array lý thuyết:</h2>
+                <p id="inHoTen" class="badge badge-danger"></p>
+                <div id="array-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOM qua tag name -->
+    <div class="w-50 mx-auto my-5">
+        <div class="card">
+            <div class="card-header text-center">
+                DOM: Sử dụng tagname (Tên thẻ)
+            </div>
+            <div class="card-body text-center">
+                <section>1</section>
+                <section>2</section>
+                <section>3</section>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOM qua className -->
+    <div class="w-50 mx-auto my-5">
+        <div class="card">
+            <div class="card-header text-center">
+                DOM: Sử dụng className (class của thẻ)
+            </div>
+            <div class="card-body text-center">
+                <article class="txt">1</article>
+                <header class="txt">2</header>
+                <footer class="txt">3</footer>
+                <p class="txt">4</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOM qua name -->
+    <div class="w-50 mx-auto my-5">
+        <div class="card">
+            <div class="card-header text-center">
+                DOM: Sử dụng name
+            </div>
+            <div class="card-body text-center">
+                <article name="txt-demo">1</article>
+                <header name="txt-demo">2</header>
+                <footer name="txt-demo">3</footer>
+                <p name="txt-demo">4</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOM qua querySelector -->
+    <div class="w-50 mx-auto my-5">
+        <div class="card">
+            <div class="card-header text-center">
+                DOM: Sử dụng querySelector
+            </div>
+            <div class="card-body text-center">
+                <p id="p-text">Hello Cybersoft</p>
+                <p id="p1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis delectus deleniti, debitis
+                    quam mollitia numquam eveniet blanditiis quia molestias temporibus?</p>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-success" id="btnSubmit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOM qua querySelectorAll -->
+    <div class="w-50 mx-auto my-5">
+        <form>
+            <div class="card" id="form">
+                <div class="card-header text-center">
+                    DOM: Sử dụng querySelectorAll
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="taiKhoan">Tên đăng nhập</label>
+                        <input type="text" class="form-control" id="taiKhoan">
+                    </div>
+                    <div class="form-group">
+                        <label for="matKhau">Mật khẩu</label>
+                        <input type="password" class="form-control" id="matKhau">
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-success" id="btnDangNhap"  type="submit">Đăng nhập</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="./js/main.js"></script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Ví dụ 1: Gán function vào button</h3>
+        <button class="btn btn-primary" onclick="sayHello()">Click me</button>
+        <br>
+        <br>
+        <h3>Ví dụ 2: Nhập và hiển thị dữ liệu nhập vào</h3>
+        <div class="form-group">
+            <label for="giaTriNhap">Nhập vào 1 giá trị</label>
+            <input class="form-control w-25" type="text" id="giaTriNhap">
+            <br>
+            <button id="btnHienThi" onclick="hienThiThongTin()" class="btn btn-success">Hiển thị</button>
+            <div class="mt-2">
+                Kết quả: <span id="ketQuaHienThi"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3>Ví dụ 3: Nhập vào số tiền lương (1h) và số giờ làm. <br> In ra tổng lương bằng số giờ nhận tiền lương</h3>
+        <div class="form-group">
+            <label for="tienLuong1h">Tiền lương 1h</label>
+            <input id="tienLuong1h" class="form-control w-25" type="text">
+            <br>
+            <label for="soGioLam">Số giờ làm</label>
+            <input id="soGioLam" type="text" class="form-control w-25">
+            <br>
+            <button id="btnTinhTien" class="btn btn-success" onclick="tinhTongLuong()">Tính tiền</button>
+            <br>
+            <div class="mt-2 alert alert-success">
+                Kết quả: <span id="tongLuong"></span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3>Ví dụ 4: Xây dựng form thông báo đăng nhập</h3>
+        <div class="form-group">
+            <span>Tài khoản:</span>
+            <input id="taiKhoan" class="form-control w-25 ml-3" type="text" style="display: inline-block;">
+            <br>
+            <br>
+            <span>Mật khẩu:</span>
+            <input id="matKhau" class="form-control w-25 ml-3" type="password" style="display: inline-block;">
+            <br>
+            <button id="btnDangNhap" class="btn btn-success mt-3" style="margin-left: 88px;">Đăng nhập</button>
+            <div class="mt-2" style="margin-left: 75px;">
+                <span class="w-25 text-center" id="ketQuaDangNhap">Kết quả đăng nhập</span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h3>Ví dụ 5: Tính tiền típ</h3>
+        <div class="card w-50">
+            <div class="card-header text-center bg-dark text-white">
+                <h4>Tính tiền típ</h4>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Tổng tiền thanh toán ?</label>
+                    <input id="tongTienThanhToan" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="">Bạn muốn típ bao nhiêu ?</label>
+                    <select id="phanTramTip" class="form-control">
+                        <option value="30">30% - Tuyệt</option>
+                        <option value="20">20% - Tốt</option>
+                        <option value="15">15% - Tạm ổn</option>
+                        <option value="10">10% - Tồi</option>
+                        <option value="5">5% - Thật tệ</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Muốn share bao nhiêu người ?</label>
+                    <input id="soNguoiTip" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <button id="btnTinhTienTip" class="btn btn-danger">Tính nào</button>
+                <br>
+                <span style="font-size: 25px;">Số tiền típ trên người</span>
+                <br>
+                <span id="tienTipTrenNguoi">10$</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="./js/main.js"></script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
